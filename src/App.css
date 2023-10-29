@@ -1,38 +1,57 @@
-.App {
+.loginForm {
   text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(167, 125, 53);
+  padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#loginHeader {
+  border: 4mm ridge rgb(80, 51, 2);
+  padding-left: 32px;
+  padding-right: 32px;
+  display: inline-block;
+  letter-spacing: 6px;
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#loginButton {
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+#loginButton:hover {
+  color: red
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navBar {
+  width: 100vw;
+  background-color: rgb(250, 239, 27);
+  color: rgb(61, 35, 2);
+  font-size: 15px;
+  padding: 5px;
+  ;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+nav ul li:hover {
+    color: rgba(255, 115, 0, 0.73);
+    filter: drop-shadow(5px 5px 5px brown)
+}
+
+nav ul li:active {
+    border-style: inset;
 }
